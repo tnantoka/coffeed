@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Root from './Root';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Root from './Root'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Root />, div);
-});
+  const div = document.createElement('div')
+  ReactDOM.render(<Root />, div)
+})
