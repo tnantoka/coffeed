@@ -8,7 +8,7 @@ const PostList = ({ posts, onPostClick }) => (
       // <ListGroupItem key={id} onClick={() => onPostClick(id)}>
       //   {posts[id]}
       // </ListGroupItem>
-      <Link key={id} to={`/posts/${id}`} className="list-group-item">{posts[id]}</Link>
+      <Link key={id} to={`/posts/${id}`} className="list-group-item" activeClassName="active">{posts[id]}</Link>
     )}
   </ListGroup>
 )

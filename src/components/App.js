@@ -3,6 +3,7 @@ import { Nav, NavItem, Navbar, Grid, Row, Col } from 'react-bootstrap'
 // import PostList from '../components/PostList'
 import VisiblePostList from '../containers/VisiblePostList'
 import Post from '../components/Post'
+import { Link } from 'react-router'
 
 class App extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class App extends React.Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="/">Coffeed</a>
+            <Link to="/">Coffeed</Link>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>
@@ -32,11 +33,11 @@ class App extends React.Component {
       </Navbar>
       <Grid>
         <Row>
-          <Col sm={3}>
-            <VisiblePostList />
-          </Col>
-          <Col sm={9}>
+          <Col sm={9} smPush={3}>
             <Post source={this.props.source} />
+          </Col>
+          <Col sm={this.props.source ? 3 : 12} smPull={this.props.source ? 9 : 0}>
+            <VisiblePostList />
           </Col>
         </Row>
       </Grid>
