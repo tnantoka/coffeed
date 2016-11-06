@@ -5,6 +5,7 @@
   "devDependencies": {
     "react-scripts": "0.7.0"
   },
+  "homepage": "https://tnantoka.github.io/coffeed",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
@@ -19,7 +20,7 @@
     "redux-api-middleware": "^1.0.2"
   },
   "scripts": {
-    "publish": "react-scripts build; rm -rf docs; mv build docs; cp docs/index.html docs/404.html; pushstate-server docs",
+    "publish": "react-scripts build; rm -rf docs; mv build docs; cp docs/index.html docs/404.html",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
