@@ -19,6 +19,7 @@
     "redux-api-middleware": "^1.0.2"
   },
   "scripts": {
+    "publish": "react-scripts build; rm -rf docs; mv build docs; cp docs/index.html docs/404.html; pushstate-server docs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
