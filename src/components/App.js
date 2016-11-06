@@ -24,7 +24,10 @@ class App extends React.Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">Coffeed</Link>
+            <Link to="/">
+              <i className="fa fa-coffee fa-fw"></i>
+              Coffeed
+            </Link>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>

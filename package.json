@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
     "markdown-react-js": "^0.3.0",
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.6",
